@@ -1,0 +1,238 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	background-image: url('../images/bats.gif');
+	background-repeat: repeat;	
+}
+
+body  {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 800px;
+	background-color: #ffffff;
+	margin: auto;
+	border: 2px solid black;
+	box-shadow: 0px 10px 10px 10px black;
+}
+
+a {
+	font-weight: bold;
+	color: orange;
+}
+
+a:link, a:visited { 
+	color: orange; 
+}
+
+a:hover, a:focus { 
+    color: green;
+}
+
+header {
+	padding: 15px;
+	border-bottom: 2px solid black;
+	background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
+}
+
+header img { 
+	float: left; 
+} 
+
+header #line-1 {
+	font-size: 230%;
+	font-weight: bold;
+	text-indent: 25px;
+	
+}
+header #line-2 {
+	font-size: 125%;
+	font-weight: bold;
+	text-indent: 25px;	
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu a.current {
+	color: orange;
+}
+
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+main h1 { 
+	font-size: 140%;
+}
+
+main h1:first-letter { 
+	font-size: 240%;
+}
+
+main h2 {
+	font-size: 125%;
+	padding: 10px 10px;
+}
+
+main h3 {
+	font-size: 110%;
+	padding: 10px 10px;
+}
+
+main p {
+	padding: 5px 5px;
+}
+
+ul {
+	line-height: 1.5em;
+	margin: 0px 0px 0px 35px;
+}
+
+section {
+	width: 665px;	
+	padding: 0 20px 20px 20px;
+}
+
+section h1 {
+	font-size: 150%;
+	color: #000000;
+	padding: .5em 0 .25em 0;
+	margin: 0;
+}
+
+aside {
+	float: left;
+	width: 160px;
+	padding-top: 15px !important;
+	min-height: 770px;	
+}
+
+footer {
+	clear: left;
+	margin-top: 20px;
+	padding: 15px 0px;
+	border-top: 2px solid black;	
+	background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+}
+
+footer p {
+	font-size: 90%;
+	text-align: center;	
+}
+
+input:required {
+	border: 2px solid orange;
+}
+
+fieldset{
+	margin-top:1em;
+	margin-bottom:1em;
+	Padding-top: 0.5em;
+	padding-bottom:0.5em;
+	
+}
+
+label{
+	float:left;
+	width:12em;
+	text-align:right;
+	
+}
+
+
+input[type="radio"] {
+/*
+- here (re)set the width for the radio button controls to 'auto', and
+- set the left margin for the radio buttons to add space as per the design
+*/
+float:left;
+width:auto;
+margin-left:50px;
+
+
+}
+
+
+#month {
+	width: 7em;
+}
+
+#year {
+	width: 5em;
+}
+
+legend{
+	color: grey;
+	font-size: 16px;
+    width:fit-content;
+	margin-top:10px;
+	margin-bottom:0.5em;
+    margin-left:5px;
+    background:white;
+}
+
+input {
+	width: 250px;
+	margin-bottom: 6px;
+}
+
+select {
+	width: 254px;
+	margin-bottom: 6px;
+}
+
+input:valid {
+	border: 1px solid black;
+}
+
+input:invalid {
+	box-shadow:none;
+}
+
+/*styling design and do alignment to set the buttons properly */
+#submit, #reset {
+	width: 10em;
+}
+
+#submit {
+	margin-left: 150px;
+}
+
+
